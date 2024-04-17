@@ -1,0 +1,81 @@
+.hardware_items{
+    display: flex;
+    flex-direction: row;
+    margin: 3% 15% 5% 25%;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.card{
+    padding: 10px 30px 15px 30px;
+    border: 4px double black;
+    margin-left: 2%;
+    width: 150px;
+}
+
+.choose_item{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.filter{
+    width: 45%;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.choose{
+    margin-top: 5px;
+    margin-left: 30%;
+}
+
+.rating{
+    display: inline-flex;
+    flex-direction: row-reverse;
+
+}
+
+.rating_item{
+    color: #dcdcdc;
+    font-size: 100px;
+    cursor: pointer;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.rating_item:hover{
+    color: #FFD700;
+}
+
+.rating_item:hover ~ .rating_item{
+    color: #FFD700;
+}
+
+.rating[data-total-value="1"] .rating_item:nth-child(n + 5),
+.rating[data-total-value="2"] .rating_item:nth-child(n + 4),
+.rating[data-total-value="3"] .rating_item:nth-child(n + 3),
+.rating[data-total-value="4"] .rating_item:nth-child(n + 2),
+.rating[data-total-value="5"] .rating_item:nth-child(n + 1){
+
+    color: #FFD700;
+}
+
+.hidden{
+    display: none;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.review_item{
+    padding: 10px 15px 10px 15px;
+    border: 4px double black;
+}
